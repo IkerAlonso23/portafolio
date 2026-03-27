@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alons | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">ALONS</div>
+            <div class="nav-links">
+                <a href="#sobre-mi" data-key="nav-about">Sobre mí</a>
+                <a href="#estudios" data-key="nav-edu">Estudios</a>
+                <a href="#lenguajes" data-key="nav-stack">Lenguajes</a>
+                <button id="lang-btn" class="lang-switch">EN</button>
+                <a href="#contacto" class="btn-contact" data-key="nav-contact">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero" id="sobre-mi">
+            <div class="hero-inner">
+                <div class="logo-3d-container">
+                    <img src="../imagenes/AlonsSolo.png" alt="Logo Alons" class="my-custom-logo">
+                    <div class="logo-reflection"></div>
+                </div>
+
+                <div class="hero-text">
+                    <p class="top-label" data-key="hero-label">DESARROLLADOR WEB Y DE SCRIPTS</p>
+                    <h1><span class="name" data-key="hero-name">Mi nombre es Alons</span></h1>
+                    <ul class="features">
+                        <h3 data-key="hero-spec">Me especializo en hacer:</h3>
+                        <li><i class="fa-solid fa-rocket"></i> <span data-key="feat-1"><strong>Optimización total</strong> para un rendimiento máximo.</span></li>
+                        <li><i class="fa-solid fa-code"></i> <span data-key="feat-2"><strong>Código limpio</strong> bajo estándares modernos.</span></li>
+                        <li><i class="fa-solid fa-layer-group"></i> <span data-key="feat-3"><strong>Interfaces de alto impacto</strong> con estética minimalista.</span></li>
+                    </ul>
+                    <div class="actions">
+                        <a href="#contacto" class="btn-metallic" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-paper-plane" style="margin-right: 10px;"></i> <span data-key="nav-contact">Contacto</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="estudios">
+            <div class="container-inner">
+                <p class="section-tag">
+                    <i class="fa-solid fa-graduation-cap"></i> <span data-key="edu-tag">FORMACIÓN</span>
+                </p>
+
+                <h2 class="section-title" data-key="edu-title">Datos <span>Académicos</span></h2>
+
+                <div class="cards-grid">
+                    <div class="glass-card">
+                        <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="info">
+                            <h3 data-key="edu-med-h3">Ciclo Grado Medio</h3>
+                            <p data-key="edu-med-p">Sistemas Microinformáticos y Redes (SMR).</p>
+                        </div>
+                        <span class="badge gray" data-key="badge-med">MEDIO</span>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="info">
+                            <h3 data-key="edu-sup-h3">Técnico Superior (DAW)</h3>
+                            <p data-key="edu-sup-p">Sistemas de desarrollo y gestión de aplicaciones.</p>
+                        </div>
+                        <span class="badge blue" data-key="badge-sup">SUPERIOR</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-languages" id="lenguajes">
+            <div class="container-inner">
+                <p class="section-tag"><i class="fa-solid fa-layer-group"></i> <span data-key="stack-tag">STACK TECNOLÓGICO</span></p>
+                <h2 class="section-title" data-key="stack-title">Tecnologías & <span>Herramientas</span></h2>
+
+                <div class="languages-grid">
+                    <div class="lang-card"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+                    <div class="lang-card"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+                    <div class="lang-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                    <div class="lang-card"><i class="fa-brands fa-react"></i><span>React</span></div>
+                    <div class="lang-card"><i class="fa-brands fa-wordpress"></i><span>WordPress</span></div>
+                    <div class="lang-card"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+                    <div class="lang-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+                    <div class="lang-card"><i class="fa-solid fa-code-branch"></i><span>VS Code</span></div>
+                    <div class="lang-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                    <div class="lang-card"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact" id="contacto">
+            <div class="container-inner">
+                <p class="section-tag"><i class="fa-solid fa-paper-plane"></i> <span data-key="nav-contact">CONTACTO</span></p>
+                <h2 class="section-title" data-key="contact-title">¿Tienes un <span>Proyecto?</span></h2>
+
+                <div class="contact-card">
+                    <form action="#" class="contact-form">
+                        <div class="form-group">
+                            <label data-key="form-name">Nombre</label>
+                            <input type="text" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label data-key="form-msg">Mensaje</label>
+                            <textarea name="mensaje" rows="5" placeholder="..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-metallic full-width">
+                            <span data-key="form-send">Enviar Mensaje</span> <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-block">
+                <img src="../imagenes/AlonsSolo.png" alt="Logo Alons" class="footer-logo-img">
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/iker-alonso-armas/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/IkerAlonso23"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/iker_alo03/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="footer-info">
+                    <p class="copyright">© 2026 Alons. <span data-key="footer-copy">Todos los derechos reservados.</span></p>
+                    <p class="footer-subtitle" data-key="hero-label">DESARROLLO WEB & SCRIPTS DE ALTO RENDIMIENTO</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
